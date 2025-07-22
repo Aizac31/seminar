@@ -4,78 +4,94 @@
   <meta charset="UTF-8">
   <title>Aiza | IT Graduate - Database Systems</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #fceabb, #f8b500); /* warm golden sunrise */
+      background: linear-gradient(to right, #f9f9f9, #e9f0ff);
       margin: 0;
       padding: 0;
-      transition: background-color 0.5s ease;
+      color: #333;
     }
 
     header {
-      background: linear-gradient(to right, #1e88e5, #42a5f5);
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* modern blue-black gradient */
       color: white;
-      padding: 2em;
+      padding: 3em 1em;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
 
-    header:hover {
-      transform: scale(1.02);
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 0.5em;
+      color: #cfd8dc;
     }
 
     .section {
-      max-width: 800px;
-      margin: 2em auto;
-      background-color: white;
-      padding: 2em;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 850px;
+      margin: 2.5em auto;
+      background-color: #ffffff;
+      padding: 2em 2.5em;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
 
     .section:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
     }
 
     h2 {
-      color: #1e88e5;
+      color: #2c5364;
       margin-bottom: 1em;
-      position: relative;
-      animation: fadeInUp 1s ease forwards;
+      border-left: 4px solid #2c5364;
+      padding-left: 0.6em;
+      font-size: 1.5em;
     }
 
     ul {
-      padding-left: 1.2em;
+      padding-left: 1.5em;
+      line-height: 1.6;
     }
 
     ul li {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.6em;
       transition: color 0.3s ease;
     }
 
     ul li:hover {
-      color: #1e88e5;
+      color: #2c5364;
     }
 
     .contact {
       text-align: center;
-      margin-top: 2em;
-      font-size: 0.9em;
+      margin-top: 1.5em;
+      font-size: 0.95em;
       color: #555;
-      animation: fadeInUp 1s ease forwards;
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
+    .contact p {
+      margin: 0.4em 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+
+      .section {
+        margin: 1.5em 1em;
+        padding: 1.5em;
       }
     }
   </style>
@@ -116,8 +132,8 @@
     <h2>📫 Contact</h2>
     <div class="contact">
       <p>Email: aiza@email.com</p>
-      <p>LinkedIn: linkedin.com/in/aiza-tech</p>
-      <p>GitHub: github.com/aiza-dev</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/aiza-tech" target="_blank">linkedin.com/in/aiza-tech</a></p>
+      <p>GitHub: <a href="https://github.com/aiza-dev" target="_blank">github.com/aiza-dev</a></p>
     </div>
   </div>
 
